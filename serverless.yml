@@ -2,6 +2,12 @@ org: takanomotors
 app: serverless-lambda-sandbox
 service: serverless-lambda-sandbox
 
+build:
+  bundle: true
+  external:
+    - '@sparticuz/chromium'
+  packages: external
+
 provider:
   name: aws
   runtime: nodejs20.x
@@ -10,7 +16,9 @@ provider:
 functions:
   hello:
     handler: src/hello.handle
-    memorySize: 128
+    memorySize: 2048
+    layers:
+      - arn:aws:lambda:ap-northeast-1:112779468875:layer:chromium:1
     events:
       - httpApi:
           path: /
