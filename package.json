@@ -2,6 +2,7 @@
   "name": "serverless-lambda-sandbox",
   "version": "1.0.0",
   "scripts": {
+    "start": "npx serverless offline",
     "dev": "npx serverless dev",
     "deploy": "npx serverless deploy",
     "remove": "npx serverless remove",
