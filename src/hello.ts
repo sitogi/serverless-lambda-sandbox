@@ -12,6 +12,7 @@ export const handle = async () => {
     console.log('ページタイトル: ', pageTitle)
   } catch (error) {
     const msg = `エラー: ${error instanceof Error ? error.message : 'unknown error'}`;
+    console.error(msg);
     return {
       statusCode: 200,
       body: JSON.stringify({

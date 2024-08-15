@@ -2,6 +2,9 @@ org: takanomotors
 app: serverless-lambda-sandbox
 service: serverless-lambda-sandbox
 
+plugins:
+  - serverless-offline
+
 build:
   bundle: true
   external:

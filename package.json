@@ -2,6 +2,7 @@
   "name": "serverless-lambda-sandbox",
   "version": "1.0.0",
   "scripts": {
+    "start": "npx sls offline",
     "dev": "npx serverless dev",
     "deploy": "npx serverless deploy",
     "remove": "npx serverless remove",
@@ -12,7 +13,8 @@
   "description": "",
   "devDependencies": {
     "@sparticuz/chromium": "^126.0.0",
-    "serverless": "^4.0.24"
+    "serverless": "^4.0.24",
+    "serverless-offline": "^14.0.0"
   },
   "dependencies": {
     "puppeteer-core": "^22.13.1"
