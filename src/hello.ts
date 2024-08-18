@@ -1,6 +1,6 @@
 export const handle = async () => {
   try {
-    console.log('Hello World!')
+    console.log('Hello World!');
   } catch (error) {
     const msg = `エラー: ${error instanceof Error ? error.message : 'unknown error'}`;
     return {
@@ -13,6 +13,6 @@ export const handle = async () => {
 
   return {
     statusCode: 200,
-    body: JSON.stringify({message: 'fire!!'}),
+    body: JSON.stringify({ message: 'fire!!' }),
   };
 };

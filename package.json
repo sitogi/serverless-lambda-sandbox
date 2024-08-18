@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "serverless": "^4.0.24",
     "serverless-offline": "^14.0.0"
   }
