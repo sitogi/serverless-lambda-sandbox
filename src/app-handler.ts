@@ -1,3 +1,4 @@
+import { printHello } from '@/printHello';
 import { Hono } from 'hono';
 import { type LambdaContext, type LambdaEvent, handle } from 'hono/aws-lambda';
 
@@ -11,6 +12,7 @@ const app = new Hono<{ Bindings: Bindings }>();
 app.get('/app', (c) => {
   console.log('start handle app');
   const requestId = c.env.lambdaContext.awsRequestId;
+  printHello();
   console.log('requestId', requestId);
   return c.text(`Hello! RequestID: ${requestId}`);
 });

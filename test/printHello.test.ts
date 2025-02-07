@@ -1,7 +1,7 @@
-import { handle } from "@/hello";
+import { printHello } from "@/printHello";
 
 test('render App component', () => {
-  handle();
+  printHello();
 
   expect(true).toBeTruthy();
 });
