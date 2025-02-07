@@ -2,7 +2,7 @@
   "name": "serverless-lambda-sandbox",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx serverless offline",
+    "start": "npx serverless offline start --reloadHandler",
     "dev": "npx serverless dev",
     "deploy": "npx serverless deploy",
     "remove": "npx serverless remove",
@@ -12,9 +12,9 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@biomejs/biome": "1.8.3",
+    "@biomejs/biome": "^1.9.4",
     "@types/node": "^20.17.7",
-    "serverless": "^4.0.24",
-    "serverless-offline": "^14.0.0"
+    "serverless": "^4.6.2",
+    "serverless-offline": "^14.4.0"
   }
 }
