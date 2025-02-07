@@ -11,10 +11,10 @@ provider:
   region: ap-northeast-1
 
 functions:
-  hello:
-    handler: src/hello.handle
+  app:
+    handler: src/app-handler.handler
     memorySize: 128
     events:
       - httpApi:
-          path: /
-          method: get
+          path: /app
+          method: any
